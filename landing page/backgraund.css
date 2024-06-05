@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0a7eac;
+}
+
+/* Header Styles */ 
+header {
+    background-color: #ac0a68;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #05b121;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background-image: url("76e6b9355380c85fe9a80dddae96172c.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size:20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    background-color: #67a880;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #ce4f15;
+}
+
+/* Product Section Styles */
+.product-section {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    margin: 20px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+}
+
+.product img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.product-details {
+    padding: 20px;
+}
+
+.product h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #b316e2;
+    margin-bottom: 20px;
+}
+
+.product .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.feature {
+    margin-bottom: 40px;
+}
+
+.feature-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #2484dd;
+    transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+    transform: rotate(360deg);
+}
+
+.feature h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Testimonial Section Styles */
+.testimonial-section {
+    background-color: #caeed9;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 40px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    font-size: 1.5em;
+    color: #202020;
+    margin-bottom: 20px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #666;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5c0303;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .hero-section {
+        padding: 150px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 3em;
+    }
+
+    .hero-section p {
+        font-size: 1.2em;
+    }
+
+    .product {
+        width: calc(100% - 40px);
+        margin: 20px 0;
+    }
+
+    .product img {
+        border-radius: 50px;
+    }
+
+    .product h2 {
+        font-size: 1.5em;
+    }
+
+    .product p {
+        font-size: 1em;
+    }
+
+    .product .price {
+        font-size: 1.2em;
+    }
+
+    .feature-icon {
+        font-size: 2.5em;
+    }
+
+    .feature h2 {
+        font-size: 1.8em;
+    }
+
+    .feature p {
+        font-size: 1em;
+    }
+
+    .testimonial p {
+        font-size: 1.2em;
+    }
+
+    .testimonial-author {
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "poppins", sans-serif;
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    body{
+        font-family: "poppins", sans-serif;
+    }
+    
+    .header{
+        position: fixed;
+        width: 100%;
+        padding: 35px 12%;
+        top: 0;
+        left: 0;
+        background-color: rgb(95, 92, 92);
+        backdrop-filter: blur;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 100;
+    
+    
+    }
+    
+    nav .logo a{
+        font-size: 25px;
+        font-weight: 600;
+        color:rgb(143, 142, 144) ;
+        transition: 0.3s ease;
+                
+    }
+    
+    nav .logo a.hover{
+        color: rgba(162, 23, 99, 0.884);
+        text-shadow: 0 0 25px rgb(186, 22, 115);
+                     0 0 50px   rgb(255, 0, 140);
+        transform: scale(1.1);             
+    
+    }
+    
+    span{
+        color: rgb(255, 0, 140)
+    
+    }
+    
+    .navbar a{
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        margin: 0 20px;
+        border-bottom: 3px solid transparent;
+        transition: 0.3s ease;
+    
+    }
+     
+    .navbar a:hover,
+    .navbar a:active{
+        color: rgb(161, 0, 134);
+        border-bottom: 3px solid rgb(133, 20, 113);
+    
+    }
+    
+    
+    .contact{
+        padding: 10px 28px;
+        background-color: rgb(215, 117, 173);
+        color: rgb(21, 15, 15);
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+    
+    }
+    
+    .contact:hover{
+        background-color: rgb(148, 8, 97);
+        box-shadow: 0 0 25px rgb(255, 248, 246);
+        color: rgb(235, 226, 226);
+    }
+    .home{
+        width: 100%;
+        min-height: 100vh;
+        background: rgb(93, 91, 91);
+        background-color: rgb(163, 157, 157);
+        display: flex;
+        align-items: center;
+        gap: 7rem;
+        padding: 30px 12% 0;
+    }
+    .home-content{
+        max-width: 800px;
+    
+    }
+    
+    .home-content h3{
+        font-size: 42px;
+    
+    }
+    .home-content h1{
+        font-size: 62px;
+        line-height: 1.2;
+    
+    }
+    .home-content p{
+        font-size: 18px;
+        margin: 25px 0 30px;
+    
+    }
+    
+    .btn-box{
+        width: 345px;
+        display: flex;
+        gap: 2em;
+    }
+    .btn-1{
+        padding: 15px 28px;
+        background-color: black;
+        color: white;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .btn-1:hover{
+        background-color: rgb(19, 18, 18);
+        color: black;
+        border: 2px solid black;
+        
+    }
+    .btn-2{
+        padding: 15px 28px;
+        background-color: rgba(49, 33, 6, 0.892);
+        color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        transition: 0.3s ease;
+        cursor: pointer;
+    
+    }
+    .btn-2:hover{
+        background-color: white;
+        color: rgb(255, 0, 191);
+    
+    }
+    .img-box img{
+        border-radius: 50%;
+        width: 500px;
+        box-shadow: 0 0 25px rgb(255, 0, 153),
+                    0 0 50px rgb(255, 0, 153);
+    }
+    
+    ::-webkit-scrollbar{
+        width: 15px;
+    
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(255, 0, 153);
+    
+    }
+    ::-webkit-scrollbar-track{
+        background-color: rgb(21, 5, 5);
+        width: 50px;
+    
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12% 8%;
+        gap: 10em;
+        background: rgb(163, 164, 165);
+    
+    }
+    .about-img img{
+        position: relative;
+        width: 400px;
+        box-shadow: 0 0 25px rgb(154, 3, 117),
+                    0 0 50px rgb(187, 15, 144);
+        border-radius: 50%;
+    
+    }
+    .about-content h2{
+        text-align: left;
+        color: white;
+        font-size: 42px;
+    
+    }
+    .about-content h3{
+        font-size: 62px;
+        color: white;
+    
+    }
+    .about-content p{
+        color: white;
+        font-size: 20px;
+        margin: 2em 0 3em;
+    }
+    .about-content u{
+        color: peru;
+        font-size: 20px;
+        margin: 2em 0 3em;
+    
+    }
+    .projects{
+        background: var(--bg-color);
+    
+    }
+    
+    .project h2{
+        margin-bottom: 8rem;
+    
+    }
+    
+    .project-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        gap: 2,5rem;
+    }
+    
+    .project-container  .project-box{
+        position: relative;
+        height: 550px;
+        overflow: hidden;
+        display: flex;
+        border-radius: 2rem;
+        border: 3px, solid transparent;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .project-box:hover{
+        border: 3px solid black;
+    
+    }
+    .project-box img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .project-box:hover img{
+        transform: scale(1.05);
+        
+    }
+    
+    .project-box  .projects-info{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 0 4rem;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        backdrop-filter: grayscale(100%);
+    
+    }
+    
+    .project-box .projects-info:hover{
+        background: rgb(19, 19, 19);
+        backdrop-filter: grayscale(0%);
+    }
+    .projects-info h4{
+        font-size: 4rem;
+        color: rgb(57, 38, 3);
+        font-weight: 800;
+    
+    }
+    
+    .projects-info p{
+        font-size: 1.rem;
+        margin: 0.3rem 0 1rem;
+        color: black;
+    }
+    
+    .contact-form h2{
+        text-align: center;
+        margin-top: 3em;
+        margin-bottom: 1em;
+        font-size: 36px;
+    }
+    
+    .contact-form form{
+        max-width: 50em;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3em;
+    
+    }
+    .contact-form form input-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    
+    }
+    .contact-form form input-box input,
+    .contact-form form text-area{
+        width: 100%;
+        padding: 1.5em;
+        font-size: 10px;
+        color: black;
+         background: rgb(237, 169, 169);
+         border-radius: .8rem;
+         margin: 1rem 0;
+         resize: none;
+    }

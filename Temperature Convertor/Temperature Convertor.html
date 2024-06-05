@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Temperature converter</title>
+    <link rel="icon" type="image/x-icon" href="T.C..png">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div  class="heading"><h1>TEMPERATURE CONVERTER</h1></div>
+
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+
+            <div id="first">
+                <div id="p1"><p>From:</p></div>
+                <div id="p2"><p>To:</p></div>
+            </div>
+            <br>
+            <div id="second">
+
+                <div id="temp_diff1">
+                    <select name="From" id="From" class="temp_diff">
+                        <option value="cel">&#176;Celsius</option>
+                        <option value="fah">&#176;Fahrenheit</option>
+                        <option value="kel">kelvin</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <select name="To" id="To"class="temp_diff" >
+                        <option value="fah">&#176;Fahrenheit</option>
+                        <option value="cel">&#176;Celsius</option>
+                        <option value="kel">kelvin</option>
+                    </select>
+                </div>
+                
+            </div>
+                    
+            <br>
+            <div id="input">
+                <p>Enter the Temperature : </p> <br>
+                <input type="number" name="temp" id="temp" value="0">
+            </div>
+
+            <br>
+            <p>Result : </p>
+            <br>
+            <div id="result"></div> 
+            <br>
+            <input type="submit" name="temp" value="convert"id="submit">
+            
+        </form>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
